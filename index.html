@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Do-No List</title>
-</head>
-<body>
-    <div class="container">
-        <div class="hello">
-            <p>Добро пожаловать на Do-No заметки!</p>
-            <p>Нажмите на кнопку "Создать заметку" чтобы начать работу или выберите уже существующие.</p>
-        </div>
-        <main>
-            <a href="#" class="make-note">Создать заметку</a>
-            <ul class="notes">
-                <li class="note">Привет! Нажми на меня!</li>
-            </ul>
-        </main>  
-    </div>
-    <div class="new-note" hidden>fcefcf</div>
-</body>
-<script src="script.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="icons/favicon.ico" />
+		<title>Do-No List</title>
+	</head>
+	<body>
+		<main>
+			<div class="hello">
+				<p>Добро пожаловать на Do-No заметки!</p>
+				<p>
+					Нажмите на кнопку "Создать заметку" чтобы начать работу или выберите
+					уже существующие.
+				</p>
+			</div>
+			<a href="#" class="make-note">➕ Создать заметку</a>
+			<ul class="notes"></ul>
+		</main>
+		<div class="new-note" hidden>
+			<textarea
+				id="new-note-text"
+				class="new-note-text"
+				title="Поле для ваших заметок."
+				placeholder="Напишите, что вам важно запомнить, здесь."></textarea>
+			<div class="new-note-actions">
+				<a href="#">🟢</a>
+				<a href="#">🟡</a>
+				<a href="#">🔴</a>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
 </html>
