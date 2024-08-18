@@ -6,6 +6,7 @@ body {
 	color: rgb(30, 30, 30);
 	display: flex;
 	justify-content: space-around;
+	min-height: 97vh;
 }
 
 .hello {
