@@ -11,15 +11,24 @@
 		<main>
 			<div class="hello">
 				<p>Добро пожаловать на Do-No заметки!</p>
-				<p>
+				<p class="tips">
 					Нажмите на кнопку "Создать заметку" чтобы начать работу или выберите
-					уже существующие.
+					уже существующие заметки.
 				</p>
 			</div>
-			<a href="#" class="make-note">➕ Создать заметку</a>
+			<button class="make-note">➕ Создать заметку</button>
 			<ul class="notes"></ul>
 		</main>
 		<div class="new-note" hidden>
+			<div class="actions">
+				<button>❓</button>
+				<button>❌</button>
+			</div>
+			<input
+				type="text"
+				class="new-note-title"
+				title="Поле для заголовка вашей заметки."
+				placeholder="Заголовок." />
 			<textarea
 				id="new-note-text"
 				class="new-note-text"
